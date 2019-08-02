@@ -2,11 +2,16 @@ package pl.sda.mvc.model;
 
 public enum Nourishment {
     HUNGRY ("hungry"),
-    NOTHUNGRY ("nothungry");
+    NOTHUNGRY ("not hungry");
 
-    private String tittle;
+    private String title;
 
-    Nourishment(String tittle){
-        this.tittle = tittle;
+    Nourishment(String title){
+        this.title = title;
+    }
+
+    @Override
+    public String toString() {
+        return title;
     }
 }
